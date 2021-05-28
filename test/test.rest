@@ -1,0 +1,35 @@
+
+# Prequisite -- install rest plugin in vscode
+# Hit API -- take the cursor to the endpoint and press ctrl+alt+r
+
+
+# get application-- questionId and nums
+GET  http://localhost:3000/application HTTP/1.1
+content-type: application/json
+
+
+
+
+
+
+### upload application without post body
+POST http://localhost:3000/upload HTTP/1.1
+content-type: application/json
+
+
+
+
+
+
+### upload application with post body
+POST http://localhost:3000/upload HTTP/1.1
+content-type: application/json
+
+{
+  "firstName": "firstName",
+  "lastName": "lastName",
+  "role": "role",
+  "referrer": "referrer",
+  "questionId": "0e69295-a060-4a36-b246-77abef5d5a68",
+  "sum": 89789
+}
